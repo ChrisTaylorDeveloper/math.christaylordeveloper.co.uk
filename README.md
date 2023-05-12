@@ -4,9 +4,11 @@ This repo started off as https://github.com/dotnet/dotnet-docker
 
 Run
 ```
+cd samples/aspnetapp
 docker build -t aspnetapp .
-docker run -it --rm -p 5000:80 --name aspnetcore_sample aspnetapp
+docker run -it --rm -p 80:80 --name aspnetcore_sample aspnetapp
 ```
+
 # Featured Repos
 
 * [dotnet/sdk](https://hub.docker.com/_/microsoft-dotnet-sdk/): .NET SDK
