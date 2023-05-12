@@ -1,6 +1,12 @@
 # math.christaylordeveloper.co.uk
 
-Start up
+Development
+```
+docker run -it --volume $(pwd):/source --workdir /source mcr.microsoft.com/dotnet/sdk:7.0
+dotnet build
+```
+
+Production
 ```
 docker build -t aspnetapp .
 docker run -it --rm -p 80:80 --name math_ctd_co_uk aspnetapp

@@ -11,7 +11,6 @@ RUN dotnet restore --use-current-runtime
 COPY aspnetapp/. .
 RUN dotnet publish --use-current-runtime --self-contained false --no-restore -o /app
 
-
 # final stage/image
 FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /app
