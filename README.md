@@ -9,5 +9,5 @@ dotnet build
 Production
 ```
 docker build -t aspnetapp .
-docker run -d -it --rm -p 80:80 --name math_ctd_co_uk aspnetapp
+docker run --env ASPNETCORE_ENVIRONMENT=Development -d -it --rm -p 80:80 --name math_ctd_co_uk aspnetapp
 ```
