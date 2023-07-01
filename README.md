@@ -6,6 +6,11 @@ docker run -it --volume $(pwd):/source --workdir /source mcr.microsoft.com/dotne
 dotnet build
 ```
 
+Delete build files
+```
+rm -rf aspnetapp/bin/ aspnetapp/obj/
+```
+
 Production
 ```
 docker build -t aspnetapp .
